@@ -5,7 +5,7 @@ readme = "README.md"
 authors = [{ name = "Hervé BREDIN", email = "herve@pyannote.ai" }]
 requires-python = ">=3.10"
 
-dynamic = ["version"]
+version = "4.0.7+stt1"
 
 dependencies = [
     "asteroid-filterbanks>=0.4.0",
@@ -42,11 +42,8 @@ separation = ["asteroid>=0.5.2", "transformers>=4.48.3"]
 dev = ["ipython>=8.32.0"]
 
 [build-system]
-requires = ["hatchling", "hatch-vcs"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-[tool.hatch.version]
-source = "vcs"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/pyannote"]
